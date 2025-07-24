@@ -21,7 +21,7 @@ const MovieCard = ({ movie }) => {
       <p className="font-semibold mt-2 truncate">{movie.title}</p>
 
       <p className="text-sm text-gray-400 mt-2">
-        {new Date(movie.release_date).getFullYear} •{" "}
+        {new Date(movie.release_date).getFullYear()} •
         {movie.genres
           .slice(0, 2)
           .map((gener) => gener.name)

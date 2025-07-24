@@ -1,7 +1,7 @@
 import React from "react";
-import Navbar from "./components/Navbar";
+import Navbar from "./template/Navbar";
 import { Route, Routes, useLocation } from "react-router-dom";
-import Footer from "./components/Footer";
+import Footer from "./template/Footer";
 import HomePage from "./pages/homePage/HomePage";
 import MoviesPage from "./pages/moviesPage/MoviesPage";
 import MovieDetailPage from "./pages/movieDetailPage/MovieDetailPage";
@@ -21,8 +21,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/movies" element={<MoviesPage />} />
-        <Route path="/movie:id" element={<MovieDetailPage />} />
-        <Route path="/movie:id/:date" element={<SeatLayout />} />
+        <Route path="/movie/:id" element={<MovieDetailPage />} />
+        <Route path="/movie/:id/:date" element={<SeatLayout />} />
         <Route path="/my-bookings" element={<MyBookingPage />} />
         <Route path="/favorites" element={<FavoritePage />} />
       </Routes>

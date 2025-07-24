@@ -6,7 +6,7 @@ const Footer = () => {
     <footer className="px-6 md:px-16 lg:px-36 mt-40 w-full text-gray-300">
       <div className="flex flex-col md:flex-row justify-between w-full gap-10 border-b border-gray-500 pb-14">
         <div className="md:max-w-96">
-          <img alt="" class="h-11" src={assets.logo} />
+          <img alt="" className="h-11" src={assets.logo} />
           <p className="mt-6 text-sm">
             Lorem Ipsum has been the industry's standard dummy text ever since
             the 1500s, when an unknown printer took a galley of type and
@@ -26,7 +26,7 @@ const Footer = () => {
             <h2 className="font-semibold mb-5">Company</h2>
             <ul className="text-sm space-y-2">
               <li>
-                <a href="#">Home</a>
+                <a href="/">Home</a>
               </li>
               <li>
                 <a href="#">About us</a>
@@ -49,8 +49,8 @@ const Footer = () => {
         </div>
       </div>
       <p className="pt-4 text-center text-sm pb-5">
-        Copyright {new Date().getFullYear()} ©{" "}
-        <a href="https://prebuiltui.com">Dustin</a>. All Right Reserved.
+        Copyright {new Date().getFullYear()} © <a href="/">QuickShow</a>. All
+        Right Reserved.
       </p>
     </footer>
   );
