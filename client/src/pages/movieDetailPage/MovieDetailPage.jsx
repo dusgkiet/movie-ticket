@@ -1,7 +1,7 @@
 import React from "react";
 
 const MovieDetailPage = () => {
-  return <div>MovieDetailPage</div>;
+  return <></>;
 };
 
 export default MovieDetailPage;
