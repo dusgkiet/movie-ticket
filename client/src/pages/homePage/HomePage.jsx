@@ -1,7 +1,7 @@
 import React from "react";
-import HeroSection from "../../components/HeroSection";
+import HeroSection from "./childen/HeroSection";
 import FeaturedSection from "../../components/FeaturedSection";
-import TrailersSection from "../../components/TrailersSection";
+import TrailersSection from "./childen/TrailersSection";
 
 const HomePage = () => {
   return (

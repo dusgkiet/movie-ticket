@@ -24,7 +24,7 @@ const MovieCard = ({ movie }) => {
         {new Date(movie.release_date).getFullYear()} •
         {movie.genres
           .slice(0, 2)
-          .map((gener) => gener.name)
+          .map((genre) => genre.name)
           .join(" | ")}
         • {timeFormat(movie.runtime)}
       </p>
@@ -38,6 +38,7 @@ const MovieCard = ({ movie }) => {
           className="px-4 py-2 text-xs bg-primary hover:bg-primary-dull transition rounded-full font-medium cursor-pointer">
           Buy Ticket
         </button>
+
         <p className="flex items-center gap-1 text-sm text-gray-400 mt-1 pr-1">
           <StarIcon className="w-4 h-4 text-primary fill-primary" />{" "}
           {movie.vote_average.toFixed(1)}
