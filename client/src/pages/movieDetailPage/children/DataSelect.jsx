@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import BlurCircle from "./BlurCircle";
+import BlurCircle from "../../../components/BlurCircle";
 import { ChevronLeftIcon, ChevronRightIcon } from "lucide-react";
 import toast from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
