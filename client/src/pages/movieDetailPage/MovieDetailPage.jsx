@@ -7,9 +7,10 @@ import timeFormat from "../../lib/timeFormat";
 import DataSelect from "../../components/DataSelect";
 
 const MovieDetailPage = () => {
-  const [show, setShow] = useState(null);
-
   const { id } = useParams();
+  console.log("Hello", id);
+
+  const [show, setShow] = useState(null);
 
   const getShow = async () => {
     const show = dummyShowsData.find((show) => show._id === id);
@@ -49,7 +50,7 @@ const MovieDetailPage = () => {
 
           <p>
             {timeFormat(show.movie.runtime)} •
-            {show.movie.genres.map((genres) => genres.name).join(", ")} •
+            {show.movie.genres.map((genre) => genre.name).join(", ")} •
             {show.movie.release_date.split("-")[0]}
           </p>
 
